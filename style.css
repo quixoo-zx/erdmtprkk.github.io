@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: #333;
+    background-color: #f2e7d5; 
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f2e7d5;
+    padding-bottom: 1px;
+}
+
+.background-image {
+    background-image: url('bayrak.gif'); 
+    background-size: cover;
+    background-position: center;
+    height: 160%;
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 48px;
+    color: #fff;
+}
+
+.headline {
+    font-size: 24px;
+    color: #E2E2E2;
+}
+
+/* Yan Menü */
+.sidebar {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #FFEE65;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.menu-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.page {
+    display: none;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #E2E2E2;
+    font-size: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-info li {
+    margin-bottom: 8px;
+}
+
+.contact-info li strong {
+    color: #E2E2E2;
+}

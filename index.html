@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERDEM TOPRAK HOUSE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button class="menu-toggle">&#9776;</button>
+
+   
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="closeMenu()">×</button>
+        <nav class="menu-links">
+            <a href="#" onclick="showPage('home')">Ana Sayfa</a>
+            <a href="#" onclick="showPage('about')">Hakkında</a>
+            <a href="#" onclick="showPage('contact')">İletişim</a>
+            <a href="#" onclick="showPage('portfolio')">Portfolyo</a>
+        </nav>
+    </div>
+
+    
+    <div class="main-content">
+        <div class="background-image">
+            <div class="content">
+                <h1 class="site-title">ERDEM TOPRAK</h1>
+                <p class="headline">Hoşgeldiniz Yakında Her Şey Yüklenecektir. Bu Bir Ödevdir. Daha da geliştireceğiz.</p>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="home" class="page">Kocaeli Üniversitesi Görsel İletişim Tasarımı Bölümü</div>
+    <div id="about" class="page">Ödevimiz Kocaeli Üniversitesi Görsel İletişim Tasarımı Bölümü Web Tasarım Dersi İçin Açılmıştır.</div>
+    <div id="contact" class="page">
+        <h2>İletişim</h2>
+        <ul class="contact-info">
+            <li><strong>Telefon:</strong> +90 001 002 00 00</li>
+            <li><strong>E-posta:</strong> erdmtprkk@gmail.com</li>
+            <li><strong>Adres:</strong> Kocaeli,Türkiye</li>
+        </ul>
+    </div>
+    <div id="portfolio" class="page">Görsel İletişim Tasarımı Bölüm Ödevleri Yüklenmektedir.</div>
+
+		
+    <script src="script.js"></script>
+</body>
+</html>
